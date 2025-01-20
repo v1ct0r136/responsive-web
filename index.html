@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negocios Locales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* CSS personalizado */
+
+        .hero {
+            background: linear-gradient(rgb(255, 247, 235), rgb(222, 220, 220)), url('https://via.placeholder.com/1920x1080');
+            height: 800px;
+            background-position: center;
+            color: rgba(107, 34, 50, 1);
+        }
+
+        .nav_bar {
+            background: rgba(107, 34, 50, 1);
+            color: rgb(255, 247, 235);
+        }
+
+        button, a {
+            background-color: rgba(107, 34, 50, 1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover, a:hover {
+            transform: scale(1.05);
+            background: rgb(129, 30, 52);
+        }
+
+        #contacto {
+            background: rgb(255, 247, 235);
+            padding: 10% 20%;
+            color: rgba(107, 34, 50, 1);
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .slayer_info {
+            box-shadow: black;
+            justify-content: space-between;
+        }
+
+        .social {
+            color: white;
+            background-color: rgba(107, 34, 50, 1);
+            height: 60px;
+            width: 60px;
+            border: 1px solid rgba(107, 34, 50, 1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        #map {
+            background-color: rgba(107, 34, 50, 1);
+        }
+    
+        footer {
+            background: rgba(107, 34, 50, 1);
+        }
+
+
+
+        .card {
+            width: 100%;
+            height: 100%;
+            background: rgba(107, 34, 50, 1);
+            transition: all 0.4s;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+            font-size: 30px;
+            font-weight: 900;
+            }
+
+        .card:hover {
+            border-radius: 15px;
+            cursor: pointer;
+            transform: scale(1.2);
+            box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+            background: rgba(107, 34, 50, 1);
+        }
+
+        .first-content {
+            height: 90%;
+            width: 100%;
+            transition: all 0.4s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            border-radius: 15px;
+        }
+
+        .card:hover .first-content {
+            height: 0px;
+            opacity: 0;
+        }
+
+        .second-content {
+            height: 0%;
+            width: 100%;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            transition: all 0.4s;
+            font-size: 0px;
+            transform: rotate(90deg) scale(-1);
+        }
+
+        .card:hover .second-content {
+            opacity: 1;
+            height: 100%;
+            font-size: 1.8rem;
+            transform: rotate(0deg);
+        }
+
+
+    </style>
+
+
+</head>
+<body class="font-sans leading-normal tracking-normal text-gray-800">
+
+    <!-- Header -->
+    <header class="nav_bar">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <h1 class="text-2xl font-bold">Mi Negocio</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-white">Inicio</a></li>
+                    <li><a href="#servicios" class="hover:text-white">Servicios</a></li>
+                    <li><a href="#contacto" class="hover:text-white">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+        <!-- Servicios -->
+        <section id="servicios" class="py-12 bg-gray-100 " >
+            <div class="container mx-auto text-center">
+                <h3 class="text-2xl font-bold mb-6">Nuestros Servicios</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+                    <div class="card">
+                        <div class="first-content">
+                          <img class="w-full p-4" src="helado-chocolate-vainilla-fresa-aislado-blanco.jpg" alt="">
+                        </div>
+                        <div class="second-content">
+                            <span>Ingredientes</span>
+                            <li>
+                                <ul>Chocolate</ul>
+                                <ul>Fresa</ul>
+                                <ul>Helado</ul>
+                                <ul>Vainilla</ul>
+                                <ul>Aislado</ul>
+                            </li>
+                        </div>
+                    </div>
+                    
+                    <div class="cards_info bg-white p-6 shadow rounded">
+                        <img src="helado-chocolate-vainilla-fresa-aislado-blanco.jpg" alt="helado-1">
+                        <h4 class="text-lg font-bold mb-2">Servicio 1</h4>
+                        <p>Descripción breve del servicio.</p>
+                    </div>
+                    <div class="cards_info bg-white p-6 shadow rounded">
+                        <img src="helado-chocolate-vainilla-fresa-aislado-blanco.jpg" alt="helado-1">
+                        <h4 class="text-lg font-bold mb-2">Servicio 2</h4>
+                        <p>Descripción breve del servicio.</p>
+                    </div>
+                    <div class="cards_info bg-white p-6 shadow rounded">
+                        <img src="helado-chocolate-vainilla-fresa-aislado-blanco.jpg" alt="helado-1">
+                        <h4 class="text-lg font-bold mb-2">Servicio 3</h4>
+                        <p>Descripción breve del servicio.</p>
+                    </div>
+                    <div class="cards_info bg-white p-6 shadow rounded">
+
+                        <img src="helado-chocolate-vainilla-fresa-aislado-blanco.jpg" alt="helado-1">
+                        <h4 class="text-lg font-bold mb-2">Servicio 3</h4>
+                        <p>Descripción breve del servicio.</p>
+                    </div>
+                    <div class="cards_info bg-white p-6 shadow rounded">
+                        <img src="helado-chocolate-vainilla-fresa-aislado-blanco.jpg" alt="helado-1">
+                        <h4 class="text-lg font-bold mb-2">Servicio 3</h4>
+                        <p>Descripción breve del servicio.</p>
+                    </div>
+                    <div class="cards_info bg-white p-6 shadow rounded">
+                        <img src="helado-chocolate-vainilla-fresa-aislado-blanco.jpg" alt="helado-1">
+                        <h4 class="text-lg font-bold mb-2">Servicio 3</h4>
+                        <p>Descripción breve del servicio.</p>
+                    </div>                  
+                </div>
+                <a href="#servicios" class="mt-6 inline-block bg-warning text-white py-2 px-4 rounded">Ver más</a>
+            </div>
+        </section>
+
+    <!-- Hero Section -->
+    <section class="hero h-screen flex items-center justify-center text-center text-white">
+        <div>
+            <h2 class="text-4xl font-bold">Un poco de nosotros...</h2>
+            <p class="mt-4 text-lg">Ofrecemos los mejores servicios para ti.</p>
+            <a href="#servicios" class="mt-6 inline-block bg-warning text-white py-2 px-4 rounded hover:bg-warning">Ver más</a>
+        </div>
+    </section>
+
+
+
+
+        <section id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5626.81961087473!2d-75.94277519396307!3d4.26639201236551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1737314569715!5m2!1ses-419!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    
+        <!-- Contacto -->
+        <section id="contacto" class="py-12 bg-gray-900">
+                <div class="socials text-center">
+                    <h3 class="text-2xl font-bold mb-6">Contáctanos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s1.svg" alt="Facebook">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s3.svg" alt="Instagram">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4">
+        <p>&copy; 2025 Victor Manuel Valencia L. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
