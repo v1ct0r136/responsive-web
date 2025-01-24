@@ -1,0 +1,91 @@
+.hero {
+    background: linear-gradient(rgb(255, 247, 235), rgb(222, 220, 220)), url('https://via.placeholder.com/1920x1080');
+    min-height: 80vh;
+    background-position: center;
+    color: rgba(107, 34, 50, 1);
+}
+
+.nav_bar {
+    background: rgba(107, 34, 50, 1);
+    color: rgb(255, 247, 235);
+}
+
+button, a {
+    background-color: rgba(107, 34, 50, 1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover, a:hover {
+    transform: scale(1.05);
+    background: rgb(129, 30, 52);
+}
+
+#contacto {
+    background: rgb(255, 247, 235);
+    padding: 10% 20%;
+    color: rgba(107, 34, 50, 1);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slayer_info {
+    box-shadow: black;
+    justify-content: space-between;
+}
+
+.social {
+    color: white;
+    background-color: rgba(107, 34, 50, 1);
+    height: 60px;
+    width: 60px;
+    border: 1px solid rgba(107, 34, 50, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#map {
+    background-color: rgba(107, 34, 50, 1);
+}
+
+footer {
+    background: rgba(107, 34, 50, 1);
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+    perspective: 1000px; /* Esta propiedad permite ver la rotación */
+    transition: transform 0.6s; /* Esto aplica una transición suave */
+}
+
+.first-content, .second-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.6s; /* Asegúrate de que la transición esté presente */
+    backface-visibility: hidden;
+}
+
+.first-content {
+    background-color: #f0f0f0;
+}
+
+.second-content {
+    background-color: #ffffff;
+    transform: rotateY(180deg); /* Voltea el contenido para que no se vea en la parte posterior */
+}
+
+.card.active .first-content {
+    transform: rotateY(180deg); /* Voltea la cara delantera */
+}
+
+.card.active .second-content {
+    transform: rotateY(0); /* Devuelve la cara posterior a su estado original */
+}
