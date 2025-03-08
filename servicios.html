@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Mi Negocio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans leading-normal tracking-normal text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="nav_bar">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <h1 class="text-2xl font-bold">Mi Negocio</h1>
+            <!-- Botón de menú -->
+            <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Menú desplegable -->
+            <nav id="menu" class="hidden absolute top-16 right-0 bg-gray-700 md:static md:flex md:bg-transparent md:space-x-4">
+                <ul class="flex flex-col md:flex-row md:space-x-4 text-center">
+                    <li><a href="index.html" class="block py-2 px-4 hover:bg-gray-600">Inicio</a></li>
+                    <li><a href="sobre_nosotros.html" class="block py-2 px-4 hover:bg-gray-600">Sobre Nosotros</a></li>
+                    <li><a href="servicios.html" class="block py-2 px-4 hover:bg-gray-600">Servicios</a></li>
+                    <li><a href="#contacto" class="block py-2 px-4 hover:bg-gray-600">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de servicios -->
+    <section class="py-12 bg-gray-100 flex-grow">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-8">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Servicio 1</h3>
+                    <p class="text-gray-700">Descripción detallada del servicio 1. Incluye beneficios y características.</p>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Servicio 2</h3>
+                    <p class="text-gray-700">Descripción detallada del servicio 2. Incluye beneficios y características.</p>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Servicio 3</h3>
+                    <p class="text-gray-700">Descripción detallada del servicio 3. Incluye beneficios y características.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4 bg-gray-900">
+        <p>&copy; 2025 Victor Manuel Valencia L. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

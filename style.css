@@ -1,3 +1,9 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: auto;
+}
+
 .hero {
     background: linear-gradient(rgb(255, 247, 235), rgb(222, 220, 220)), url('https://via.placeholder.com/1920x1080');
     min-height: 80vh;
@@ -88,4 +94,37 @@ footer {
 
 .card.active .second-content {
     transform: rotateY(0); /* Devuelve la cara posterior a su estado original */
+}
+
+@media screen and (max-width: 640px) {
+    .card {
+        width: 100%;
+    }
+
+    #productos {
+        margin: auto;
+        padding: 10% 20%;
+        color: rgba(107, 34, 50, 1);
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    #productos {
+        margin: auto;
+        padding: 10% 3%;
+        color: rgba(107, 34, 50, 1);
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    
+    body {
+        width: 100%;
+    }
+    
 }
