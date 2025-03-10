@@ -1,7 +1,16 @@
 body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pacifico', 'cursive';
+    font-weight: 600;
+}
+
+p, a, button {
+    font-family: 'Comic Neue', 'cursive';
+    font-weight: 400;
 }
 
 .hero {
@@ -9,6 +18,10 @@ body {
     min-height: 80vh;
     background-position: center;
     color: rgba(107, 34, 50, 1);
+}
+
+#productos {
+    font-size: 1.5em;
 }
 
 .nav_bar {
@@ -114,7 +127,7 @@ footer {
     
     #productos {
         margin: auto;
-        padding: 10% 3%;
+        padding: 10% 6%;
         color: rgba(107, 34, 50, 1);
         justify-content: center;
     }

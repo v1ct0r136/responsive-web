@@ -1,4 +1,4 @@
-fetch('menu.json')
+fetch('data/menu.json')
     .then(response => {
         return response.json();
     })
@@ -11,7 +11,7 @@ fetch('menu.json')
                 <div class="first-content">
                     <img class="w-full p-2" src="${menuItem.image}" alt="${menuItem.name}">
                 </div>
-                <div class="second-content">
+                <div class="second-content flex items-center flex-col justify-center">
                     <h2>${menuItem.nombre}</h2>
                     <p>${menuItem.ingredientes}</p>
                     <p class="menu-item__price">$${menuItem.precio}</p>
