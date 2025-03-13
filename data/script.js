@@ -9,7 +9,7 @@ fetch('data/menu.json')
             menuItemElement.classList.add('card');
             menuItemElement.innerHTML = `
                 <div class="first-content">
-                    <img class="w-full p-2" src="${menuItem.image}" alt="${menuItem.name}">
+                    <img class="w-full h-full p-2" src="${menuItem.image}" alt="${menuItem.name}">
                 </div>
                 <div class="second-content flex items-center flex-col justify-center">
                     <h2>${menuItem.nombre}</h2>

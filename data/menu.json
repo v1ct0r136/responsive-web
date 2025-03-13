@@ -1,44 +1,44 @@
 [
     {
-        "nombre": "Producto 1",
+        "nombre": "Ensalada de frutas",
         "ingredientes": "vainilla, chocolate, fresa",
-        "precio": 10.000,
-        "image": "images/helado-chocolate-vainilla-fresa-aislado-blanco.jpg"
+        "precio": 7000,
+        "image": "../images/menu/Ensalada_frutas.jpg"
     },
     {
         "nombre": "Producto 2",
         "ingredientes": "vainilla, chocolate, fresa",
         "precio": 10.000,
-        "image": "images/helado-chocolate-vainilla-fresa-aislado-blanco.jpg"
+        "image": "images/menu/helados_1.png"
     },
     {
         "nombre": "Producto 3",
         "ingredientes": "vainilla, chocolate, fresa",
         "precio": 10.000,
-        "image": "images/helado-chocolate-vainilla-fresa-aislado-blanco.jpg"
+        "image": "images/menu/helados_2.png"
     },
     {
         "nombre": "Producto 4",
         "ingredientes": "vainilla, chocolate, fresa",
         "precio": 10.000,
-        "image": "images/helado-chocolate-vainilla-fresa-aislado-blanco.jpg"
+        "image": "images/menu/helados_3.png"
     },
     {
         "nombre": "Producto 5",
         "ingredientes": "vainilla, chocolate, fresa",
         "precio": 10.000,
-        "image": "images/helado-chocolate-vainilla-fresa-aislado-blanco.jpg"
+        "image": "images/menu/helados_5.png"
     },
     {
         "nombre": "Producto 6",
         "ingredientes": "vainilla, chocolate, fresa",
         "precio": 10.000,
-        "image": "images/helado-chocolate-vainilla-fresa-aislado-blanco.jpg"
+        "image": "images/menu/Ensalada_frutas.jpg"
     },
     {
         "nombre": "Producto 7",
         "ingredientes": "vainilla, chocolate, fresa",
         "precio": 10.000,
-        "image": "images/helado-chocolate-vainilla-fresa-aislado-blanco.jpg"
+        "image": "images/menu/helados_3.png"
     }
 ]
